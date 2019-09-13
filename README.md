@@ -1,9 +1,9 @@
 
 # Conteúdos sobre a linguagem C
 
-![](/imagem/C.png)
-
 Material para futuras consultas
+
+![](/imagem/C.png)
 
 ## Sobre
 
