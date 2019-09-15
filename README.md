@@ -17,7 +17,7 @@ Material para futuras consultas
 
 ## Objetivos restantes
 
-- [ ] Realizar o code review da lista de exercícios 02 até a 07 e adicionar ao repositório
+- [ ] Realizar o code review da lista de exercícios 03 até a 07 e adicionar ao repositório
 - [ ] Adiconar os futuros conteúdos apreendidos em sala de aula
 - [x] Tomar café
 - [x] Ouvir Rock
