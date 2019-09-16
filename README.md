@@ -19,6 +19,7 @@ Material para futuras consultas
 
 - [ ] Realizar o code review da lista de exercícios 03 até a 07 e adicionar ao repositório
 - [ ] Adiconar os futuros conteúdos apreendidos em sala de aula
+- [ ] Terminar o exercício 07 e 09 da lista 04 
 - [x] Tomar café
 - [x] Ouvir Rock
 
