@@ -62,10 +62,9 @@ int main(){
     // fgets(string, número_maximo_de_caracteres, método);
     char s[20];
     fgets(s, 20, stdin); // vai ler até 20 ou até o primeiro enter
-    // ao final do fgets é colocado um \n e um \0
-
+    // ao final do fgets é colocado um \n e um \0, o \n será inserido caso o usuário der um enter antes do final do vetor de caracteres
     // EX 1 print:
-    printf("%s", s);
+    printf("%s", s); // Percorre a cadeia de caracteres até encontrar um \0
 
     // EX 2 print:
     int i;
@@ -74,7 +73,7 @@ int main(){
     }
 
     // EX 3 print:
-    puts(s);
+    puts(s); // Percorre a cadeia de caracteres até encontrar um \0
 
     return 0;
 }
