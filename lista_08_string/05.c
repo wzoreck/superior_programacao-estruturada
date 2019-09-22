@@ -19,7 +19,7 @@ int main(){
         }
     }
 
-     // Declaração do novo vetor com o tamanho exatao
+     // Declaração do novo vetor com o tamanho exato
     char v2[cont];
 
      // Invertendo a string
