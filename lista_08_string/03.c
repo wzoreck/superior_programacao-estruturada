@@ -46,7 +46,7 @@ int main(){
         }
     }
     //acrescentar \0 no final do s3
-    s3[tamanho_s3+1]= '\0';
+    s3[tamanho_s3]= '\0';
 
     // Print
     puts(s3);
