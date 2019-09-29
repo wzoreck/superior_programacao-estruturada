@@ -8,7 +8,7 @@ A[i][j] = 4i^3 − 5j^2 + 1   se i > j.
 #include <math.h>
 int main(){
 
-    int constante=3;
+    int constante=10; // Basta alterar o valor da constante para reduzir a matriz
     int matriz[constante][constante], i, j;
 
     // Entrda
