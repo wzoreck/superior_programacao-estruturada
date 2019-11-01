@@ -20,7 +20,7 @@ int r = 1;
 
 int main() {
 
-    int teste = MDC(25, 10);
+    int teste = MDC(40, 60);
     printf("\nValor %d", teste);
 
     return 0;
