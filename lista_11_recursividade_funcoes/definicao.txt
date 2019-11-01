@@ -1,0 +1,37 @@
+Fonte: https://pt.wikibooks.org/wiki/Programar_em_C/Fun%C3%A7%C3%B5es
+
+Uma função pode chamar a si própria. Uma função assim é chamada função recursiva. Há várias operações matemáticas recursivas, das quais exemplos bem conhecidos são a sequência de Fibonacci e o fatorial.
+
+Daremos o exemplo do cálculo do fatorial de um número, definido como o produto de todos os números naturais (não nulos) menores ou iguais a ele — por exemplo, 5! (lê-se "cinco fatorial") é igual a 5 × 4 × 3 × 2 × 1 {\displaystyle 5\times 4\times 3\times 2\times 1} {\displaystyle 5\times 4\times 3\times 2\times 1}. Atenção à convenção 0 ! = 1 {\displaystyle 0!=1} {\displaystyle 0!=1}.
+
+                            Fibonacci(5)
+                            /         \
+                           /           \
+                          /             \
+                         /               \
+                        /                 \
+                     F(4)        +        F(3)
+                     /  \                 /  \
+                    /    \               /    \
+                   /      \             /      \
+                  /        \           /        \
+                 /          \         /          \
+               F(3)   +    F(2)    F(2)   +     F(1)
+               /\           /\       |  \         \
+              /  \         /  \      |   \         \
+             /    \       /    \     |    \         \
+            /      \     /      \    |     \         \
+           F(2) + F(1)  F(1) + F(0) F(1) + F(0)       1
+            /\      |    |      |    |      |
+           /  \     |    |      |    |      |
+          /    \    |    |      |    |      |
+         /      \   |    |      |    |      |
+        F(1) + F(0) 1    1      0    1      0
+        |       |
+        |       |
+        |       |
+        |       |
+        1       0
+
+Cada vez que a sub-rotina chama a si mesmo, ela deve armazenar o estado atual da sub-rotina (linha atual que está sendo executada, os valores de todas as variáveis​​, etc) em uma estrutura de dados chamada de "pilha".
+Se você usar a recursividade durante um longo período de tempo, a pilha vai ficar muito grande e o programa dará uma mensagem de aviso.

@@ -16,23 +16,21 @@ int MDC (int m, int n){
 #include <stdio.h>
 
 int MDC(int m, int n);
+int r = 1;
 
 int main() {
 
-    int teste = MDC(25, 15);
+    int teste = MDC(25, 10);
     printf("\nValor %d", teste);
-
-
 
     return 0;
 }
 
 int MDC(int m, int n) {
-    int r = m%n;
-    m = n;
-    n = r;
-    if(r > 0) {
-        int x = MDC(m, r);
-        return x;
+    if(r != 0) {
+        r = m%n;
+        int x = MDC(n, r);
+    } else {
+        return m;
     }
 }
