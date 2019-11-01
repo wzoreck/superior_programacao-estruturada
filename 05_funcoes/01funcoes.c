@@ -10,7 +10,7 @@ int main (){ // o main em si já é uma função, essa função é responsável 
 
     //int i = sqrt(9);  outro exemplo de função sendo chamada, realiza a raiz quadrada do número informado
 
-    // void significa que não vai ter renorno, podemos escolher o tipo de retorno das nossas funções, ex:
+    // void significa que não vai ter retorno, podemos escolher o tipo de retorno das nossas funções, ex:
 
     /*
         void func1(){

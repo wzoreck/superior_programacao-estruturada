@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Estas funções declaradas antes servem para o programa reconhescer antes a existência das funções, ajuda a evitar futuros erros por conta da ordem de criação das funções
 void func1();
 void funcComParametro();
 int dobroNumero( int num );
@@ -33,6 +34,28 @@ int main() {
 
     return 0;
 }
+
+/* Caractereisticas de funções, (tipo de retorno, nome, parametros)
+
+    EX:
+
+    TIPO - void, int, char, float ...
+    NOME - Funcao1, Daniel, Soma (escolha a seu critério) ...
+    ATRIBUTOS - TIPO NOME(int i, char c, float f, ...)
+
+    -------------------------------------------------------------------------
+
+    As variáveis declaradas em uma função só existem nela. É conhecido como variável local
+
+    Ao passar um parâmetro em uma função, a função rebece uma cópia do valor original da variável, se o valor passado for alterado ele não irá alterar o valor da vairável inicial fora da função
+
+    Deve haver uma variável no código principal para receber o valor de retorno gerado pela função (caso a função funcione dessa maneira)
+
+    -------------------------------------------------------------------------
+
+    Variáveis globais existem em todo o seu programa
+
+*/
 
 void func1() {
     i = 10;
