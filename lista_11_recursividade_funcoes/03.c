@@ -18,7 +18,7 @@ int mmc(int x, int y);
 int main() {
 
     int funcao;
-    printf("Escolha a função que deseja realizar", );
+    printf("Escolha a função que deseja realizar");
 
     switch (variável) {
     case constante1:

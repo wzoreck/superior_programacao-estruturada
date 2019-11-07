@@ -22,5 +22,17 @@ int main() {
     *h = 21;
     printf("\n\nendereço de h = %p\t valor de h, endereço de i = %p\t aponta = %d", &h, h, *h);
 
+    /*
+
+    &variável --> endereço da variável
+
+    variável --> conteúdo da variável
+
+    *variável --> conteúdo de onde a variável aponta
+
+    - DENTRO DE UMA FUNÇÃO NÃO PODEMOS AALTERAR O VALOR DA VARIÁVEL DE OUTRA FUNÇÃO, MAS COM PONTEIROS PODEMOS CONTORNAR ESSA CITUAÇÃO
+
+    */
+
     return 0;
 }
