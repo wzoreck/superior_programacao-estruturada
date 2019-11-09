@@ -8,37 +8,43 @@ void ordenar(int *a, int *b, int *c);
 
 int main() {
 
+    int x, y, z;
+    printf("Informe o primeiro número: ");
+    scanf("%d", &x);
+    printf("Informe o segundo número: ");
+    scanf("%d", &y);
+    printf("Informe o terceiro número: ");
+    scanf("%d", &z);
 
+    ordenar(&x, &y, &z);
 
+    printf("\n%d %d %d", x, y, z);
 
     return 0;
 }
 
 void ordenar(int *a, int *b, int *c) {
-    int maior, meio, menor;
-    if (*a>*b && *a>*c && *b>*c){
-        maior = *a;
-        meio = *b;
-        menor = *c;
-    } else if(*c>*b) {
-        maior = *a;
-        meio = *c;
-        menor = *b;
-    } else if (*b>*a && *b>*c && *a>*c){
-        maior = *b;
-        meio = *a;
-        menor = *c;
-    } else if(*c>*a){
-        maior = *b;
-        meio = *c;
-        menor = *a;
-    } else if (*c>*a && *c>*b && *a>*b){
-        maior = *c;
-        meio = *a;
-        menor = *b;
-    } else {
-        maior = *c;
-        meio = *b;
-        menor = *a;
+    int v[3], i;
+    int menor=*a, meio=*b, maior=*c;
+    v[0] = *a;
+    v[1] = *b;
+    v[2] = *c;
+    for(i=0; i<3; i++) {
+        if(v[i] < menor) {
+            menor= v[i];
+        }
     }
+    for(i=0; i<3; i++) {
+        if(v[i] > maior) {
+            maior= v[i];
+        }
+    }
+    for(i=0; i<3; i++) {
+        if(v[i] > menor && v[i] < maior) {
+            meio= v[i];
+        }
+    }
+    *a= menor;
+    *b= meio;
+    *c= maior;
 }
