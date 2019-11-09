@@ -18,27 +18,41 @@ int mmc(int x, int y);
 int main() {
 
     int funcao;
-    printf("Escolha a função que deseja realizar");
-
-    switch (variável) {
-    case constante1:
-     Instruções;
-    break;
-
-    case constante2:
-     Instruções;
-    break;
-
-    default
-     Instruções;
-    }
+    printf("[1] - Ackerman");
+    printf("\n[2] - mod");
+    printf("\n[3] - div");
+    printf("\n[4] - fib");
+    printf("\n[5] - mmc");
+    printf("\n\nEscolha a função que deseja realizar: ");
+    scanf("%d", &funcao);
 
     int sequenciaDeAckerman;
-    printf("Digite um número para a sequência de ackerman: ");
-    scanf("%d", &sequenciaDeAckerman);
-    sequenciaDeAckerman = ackerman(sequenciaDeAckerman);
-    printf("\nresultado: %d", sequenciaDeAckerman);
 
+    switch (funcao) {
+    case 1 :
+        printf("\nDigite um número para a sequência de ackerman: ");
+        scanf("%d", &sequenciaDeAckerman);
+        sequenciaDeAckerman = ackerman(sequenciaDeAckerman);
+        printf("resultado: %d", sequenciaDeAckerman);
+    break;
+
+    case 2 :
+
+    break;
+
+    case 3 :
+
+    break;
+
+    case 4 :
+
+    break;
+
+    case 5 :
+
+    break;
+
+ }
 
     return 0;
 }
