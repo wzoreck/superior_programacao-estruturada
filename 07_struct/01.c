@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Tipo eterogêneo, é um tipo e dentro dela tem vários tipos
+
 struct carro {
 
     char marca[20];
